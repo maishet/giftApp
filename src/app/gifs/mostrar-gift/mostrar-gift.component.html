@@ -1,1 +1,20 @@
-<p>mostrar-gift works!</p>
+<!-- <ul>
+    <li *ngFor="let gift of resultados">
+        <img [src]="gift.images.downsized_medium.url" alt="">
+        {{gift.title }}
+    </li>
+</ul> -->
+
+<div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 animate__animated animate__zoomIn"
+        *ngFor="let gift of resultados">
+        <div class="card">
+            <a [href]="gift.images.downsized_medium.url" target="_blank">
+                <img [src]="gift.images.downsized_medium.url" alt="" class="card-img-top img-fluid">
+            </a>
+            <div class="card-body">
+                <p class="card-text">{{gift.title }}</p>
+            </div>
+        </div>
+    </div>
+</div>

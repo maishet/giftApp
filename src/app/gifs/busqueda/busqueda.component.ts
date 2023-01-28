@@ -8,7 +8,7 @@ import { GifsService } from '../service/gifs.service';
 })
 export class BusquedaComponent {
 
-  @ViewChild('txtBuscar') txtBuscar!: ElementRef<HTMLInputElement>;  //sirve para 
+  @ViewChild('txtBuscar') txtBuscar!: ElementRef<HTMLInputElement>;  //decorador para buscar la referencia local que especifique en el html
 
   constructor(private giftservice: GifsService){}  
 

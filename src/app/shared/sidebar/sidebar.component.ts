@@ -12,4 +12,8 @@ export class SidebarComponent {
   get historial(){
     return this.giftservice.historial;
   }
+
+  buscar(termino: string){
+    this.giftservice.buscargift(termino);
+  }
 }
